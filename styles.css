@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(19, 13, 87);
+  align-items: center;
+  padding-top: 40px;
+}
+
+nav {
+  background-image: linear-gradient(rgb(36, 34, 96), rgb(77, 176, 212));
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.animal-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+
+}
+
+.animal {
+  margin: 20px;
+  text-align: center;
+  background-color: rgb(221, 241, 245);
+  border: black 1px solid;
+  border-radius: 23px;
+  padding: 10px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  width: 50%;
+}
+
+
+.animal:hover{
+  background-color: #2586a1;
+}
+.animal img {
+  
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.animal img:hover {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.animal audio {
+  margin-top: 10px;
+}
+
+.animal p {
+  margin-top: 10px;
+  
+}
+
+.animal p:hover {
+  color: white;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
